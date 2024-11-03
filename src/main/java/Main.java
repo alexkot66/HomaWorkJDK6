@@ -8,11 +8,14 @@ public class Main {
 
         Game game = new Game(1000);
         Game game1 = new Game(500);
+        Game game2 = new Game(1000);
 
         Map<Integer, Boolean> resultsGame = game.playGame(true);
         Map<Integer, Boolean> resultsGame1 = game1.playGame(false);
 
         game.showResults(resultsGame);
         game1.showResults(resultsGame1);
+        game2.showResults(game2.playGame(true));
+
     }
 }
